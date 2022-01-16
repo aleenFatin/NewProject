@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Homepage</title>
+</head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+.w3-bar,h1,button {font-family: "Montserrat", sans-serif}
+.fa-anchor,.fa-coffee {font-size:200px}
+</style>
+
+<!--Header image-->
+<style>
+body, html {
+    height: 100%;
+    margin: 0;
+  }
+  
+.hero-image {
+    background-image: linear-gradient(rgba(100, 83, 90, 0.397), rgba(7, 7, 7, 0.5)), url("images/background.png");
+    height: 80%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+.hero-text {
+    text-align:center;
+    position:absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+  }
+  
+.hero-text button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 10px 25px;
+  color: rgb(240, 238, 238);
+  background-color: rgb(152, 199, 189);
+  text-align: center;
+  cursor: pointer;
+}
+  
+.hero-text button:hover {
+  background-color: #555;
+  color: white;
+}
+</style>
+
+<!--End of Header image-->
+
+<!--Navigation Bar Style-->
+<head>
+<style>
+body{
+  margin: o;
+  padding:0;
+  background: #ECE2E1;
+}
+
+nav{
+  width: 100%;
+  background: #D3E0DC;
+  overflow: auto;
+}
+
+ul {
+  padding: 0;
+  list-style-type: none;
+  margin: 0 0 0 150px;
+  padding: 0;
+  border: 1px solid #e7e7e7;
+  background-color: #D3E0DC;
+}
+
+li {
+  float: left;
+} 
+
+li a:hover:not(.active) {
+  background-color: #FCD1D1;
+} 
+
+li a.active {
+  color: rgb(255, 255, 255);
+  background-color: #FCD1D1;
+}
+
+nav a{
+  width: 100px;
+  display: block;
+  padding: 20px 15px;
+  text-decoration: none;
+  color: #8d8484;
+  text-align: center;
+}
+</style>
+</head>
+
+<body>
+<!--Navigation Bar-->
+<nav>
+<ul>
+  <li><a class="active" href="index.html">Home</a></li>
+  <li><a href="biodata.html">Biodata</a></li>
+  <li><a href="education.html">Education</a></li>
+  <li><a href="family.html">Family</a></li>
+  <li><a href="gallery.html">Gallery</a></li>
+  <li><a href="playlist.html">Playlist</a></li>
+  <li><a href="contact.html">Contact</a></li>
+</ul>
+</nav>
+
+<!-- Header -->
+<div class="hero-image">
+  <div class="hero-text">
+    <h1 style="font-size:50px">Welcome to my website</h1>
+    <button>Get to know me!</button>
+  </div>
+</div>
+
+<!-- Quote section -->
+<div class="w3-row-padding w3-padding-64 w3-container">
+  <div class="w3-content">
+    <div class="w3-twothird">
+      <h1 style="color: #97BFB4;">Quote of the day...</h1>
+      <h5 class="w3-padding-32"><i>"Taking responsibility - practicing 100 percent responsibility every day - is about seeing ourselves not as right or wrong, but as an agent, chooser, problem solver, and learner in the complex interrelationships of our lives so that we can better integrate with the people and world around us. When we do this, we enjoy a better and more productive way to live and lead." <sub>Christopher Avery, The Responsibility Process</sub></i></h5>
+</div>
+
+<!--audio album style-->
+<style>
+img {
+    border: 2px solid rgb(158, 241, 203);
+    border-radius: 4px;
+    padding: 5px;
+    width: 150px;
+    position:relative;
+}
+      
+img:hover {
+  /* Start the shake animation and make the animation last for 0.5 seconds */
+  animation: shake 0.5s;
+
+  /* When the animation is finished, start again */
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+</style>
+
+<!--Album section-->
+<div class="w3-third w3-center">
+  <a target="_blank" href="images/album.jpg">
+    <img src="images/album.jpg" style="width: 150px;"></a>
+<audio controls>
+  <source src="audio/dancedance.mp3" type="audio/mp3">
+  Your browser does not support the audio element.
+</audio>
+
+</div>
+</div>
+</div>
+
+<!-- Video section -->
+
+<div style="float: left;padding: 12px;">
+  <h3 style="color:#97BFB4; text-align: center;">Just a fun video</h3>
+        <video width="300" height="260" controls>
+          <source src="video/vid1.mp4" type="video/mp4">
+          <source src="video/veil.mp4" type="video/ogg">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+
+<div style="float: left;padding: 12px;">
+  <h3 style="color:#97BFB4; text-align: center;">My sister</h3>
+        <video width="300" height="260" controls>
+          <source src="video/vid4.mp4" type="video/mp4">
+          <source src="video/veil.mp4" type="video/ogg">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+
+<div style="float: left;padding: 12px;">
+  <h3 style="color:#97BFB4; text-align: center;">I miss my cat ;(</h3>
+        <video width="300" height="260" controls>
+          <source src="video/cat2.mp4" type="video/mp4">
+          <source src="video/veil.mp4" type="video/ogg">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+
+<div style="float: left;padding: 12px;">
+  <h3 style="color:#97BFB4; text-align: center;">Sketch</h3>
+        <video width="300" height="260" controls>
+          <source src="video/sketch.mp4" type="video/mp4">
+          <source src="video/veil.mp4" type="video/ogg">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+
+<div style="clear: both; justify-content: baseline;"></div>
+
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity">  
+    <div class="w3-content w3-container w3-padding-50" id="about"></div>
+
+</body>
+</html>
